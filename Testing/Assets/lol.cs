@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class lol : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
-		
+		gameObject.transform.rotation = Quaternion.Euler(0, Random.Range(0, 180), 0);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	    
+	void FixedUpdate () {
+	    gameObject.transform.Rotate(0,4,0);
 	}
 }
